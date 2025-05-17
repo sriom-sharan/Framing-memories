@@ -18,7 +18,7 @@ import { Logo } from "@/components/icons";
 export const Navbar = () => {
   return (
     <HeroUINavbar
-      className="bg-primary h-[80px]"
+      className="bg-[#C1C6B9] h-[80px]"
       shouldHideOnScroll
       maxWidth="xl"
       position="sticky"
