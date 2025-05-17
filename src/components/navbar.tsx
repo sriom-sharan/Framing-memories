@@ -18,7 +18,7 @@ import { Logo } from "@/components/icons";
 export const Navbar = () => {
   return (
     <HeroUINavbar
-      className="bg-[#C1C6B9] h-[80px]"
+      className="bg-[#C1C6B9] py-2"
       shouldHideOnScroll
       maxWidth="xl"
       position="sticky"
@@ -31,6 +31,7 @@ export const Navbar = () => {
             href="/"
           >
             <Logo />
+            {/* <img src="logo.png" className="w-28" alt="" /> */}
             <p className="font-bold text-inherit">Framing Memories</p>
           </Link>
         </NavbarBrand>
