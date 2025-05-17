@@ -8,7 +8,6 @@
 // import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
 
 export default function IndexPage() {
   return (
