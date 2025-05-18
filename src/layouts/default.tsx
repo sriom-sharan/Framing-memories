@@ -15,10 +15,10 @@ export default function DefaultLayout({
         {children}
       </main>
       <footer className=" pb-10 text-black  bg-[#ebe9e2] ">
-        <div className="max-w-7xl  grid row-span-3 md:col-span-3 md:gap-12 gap-4 py-12 md:py-20 px-7 mx-auto ">
+        <div className="max-w-7xl  grid row-span-3 md:col-span-3 md:gap-12 gap-16 py-12 md:py-20 px-7 mx-auto ">
           <div className="flex flex-col  md:col-start-1 gap-6 md:gap-8">
             <h2 className="md:text-4xl text-3xl mb-6">Framing Memories</h2>
-            <div className="flex flex-col gap-6 w-full pr-10">
+            <div className="flex flex-col gap-6 w-full md:pr-10">
               <div className="w-full">
                 <label htmlFor="email" className="block pb-2">
                   Email*
@@ -50,7 +50,7 @@ export default function DefaultLayout({
             </div>
           </div>
 
-          <div className="flex md:flex-row flex-col lg:gap-16 gap-4 md:col-start-3">
+          <div className="flex md:flex-row flex-col gap-16  md:col-start-3">
             <div className="flex flex-col col-start-3 md:w-1/3  justify-end  gap-2">
               <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
                 123-456-7890

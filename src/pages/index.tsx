@@ -287,19 +287,32 @@ export default function IndexPage() {
               </p>
             </div>
           </div>
-          <div className="grid col-span-3 md:justify-end md:gap-10 gap-4 row-span-2">
-            <h1 className="md:text-4xl text-3xl  pb-9 col-start-1 row-start-1 pt-4">
-              Company1
+           
+          <div className="flex ">
+            <div className="lg:w-1/2 md:w-1/3"></div>
+           <div className="flex flex-wrap justify-between md:w-2/3 lg:w-1/2 md:justify-end gap-8 ">
+              
+          
+            <h1 className="md:text-4xl text-2xl w-1/4  pb-9  pt-4">
+              Company
             </h1>
-            <h1 className="md:text-4xl text-3xl col-start-2 row-start-1  pb-9 pt-4">
-              Company2
+            <h1 className="md:text-4xl text-2xl w-1/4  pb-9  row-start-1 pt-4">
+              Company
             </h1>
-            <h1 className="md:text-4xl text-3xl  col-start-3 row-start-1 pb-9 pt-4">
-              Company3
+            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+              Company
             </h1>
-            <h1 className="md:text-4xl text-3xl  pb-9 pt-4">Company4</h1>
-            <h1 className="md:text-4xl text-3xl   pb-9 pt-4">Company5</h1>
-            <h1 className="md:text-4xl text-3xl  pb-9 pt-4">Company6</h1>
+            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+              Company
+            </h1>
+            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+              Company
+            </h1>
+            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+              Company
+            </h1>
+
+        </div>
           </div>
         </div>
 
