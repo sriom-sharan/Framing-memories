@@ -30,9 +30,9 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <Logo />
+            {/* <Logo /> */}
             {/* <img src="logo.png" className="w-28" alt="" /> */}
-            <p className="font-bold text-inherit">Framing Memories</p>
+            <p className="font-medium text-xl font-spartan text-inherit">F. Memories</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
