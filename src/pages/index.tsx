@@ -64,7 +64,7 @@ export default function IndexPage() {
         </div>
 
         {/*----------- Services ----------*/}
-        <div className=" min-h-dvh text-white pb-16 bg-[#445D4A] ">
+        <div className=" min-h-dvh text-white pb-20 bg-[#445D4A] ">
           <div className="max-w-7xl min-h-dvh  flex flex-col gap-16 py-12 md:py-20 px-7 mx-auto ">
             <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
               <h2 className="md:text-6xl text-4xl">Travel Experiences</h2>
@@ -79,32 +79,32 @@ export default function IndexPage() {
 
             <hr />
             <div className="flex flex-col md:flex-row  gap-6 md:gap-8">
-              <h2 className="md:text-4xl w-1/2 text-3xl">Adventure Tours</h2>
-              <p className="text-xl w-1/2">Thrilling Escapades</p>
+              <h2 className="md:text-4xl md:w-1/2 text-3xl">Adventure Tours</h2>
+              <p className="text-xl md:w-1/2">Thrilling Escapades</p>
             </div>
 
             <hr />
             <div className="flex flex-col md:flex-row   gap-6 md:gap-8">
-              <h2 className="md:text-4xl w-1/2 text-3xl">
+              <h2 className="md:text-4xl md:w-1/2 text-3xl">
                 Cultural Immersions
               </h2>
-              <p className="text-xl w-1/2 ">Embracing Local Traditions</p>
+              <p className="text-xl md:w-1/2 ">Embracing Local Traditions</p>
             </div>
 
             <hr />
             <div className="flex flex-col md:flex-row   gap-6 md:gap-8">
-              <h2 className="md:text-4xl w-1/2 text-xl">
+              <h2 className="md:text-4xl md:w-1/2 text-3xl">
                 Off-the-Beaten-Path Journeys
               </h2>
-              <p className="text-xl w-1/2 ">Exploring Hidden Gems</p>
+              <p className="text-xl md:w-1/2 ">Exploring Hidden Gems</p>
             </div>
 
             <hr />
             <div className="flex flex-col md:flex-row   gap-6 md:gap-8">
-              <h2 className="md:text-4xl w-1/2 text-xl">
+              <h2 className="md:text-4xl md:w-1/2 text-3xl">
                 Tailored Itineraries
               </h2>
-              <p className="text-xl w-1/2 ">Crafting Dream Getaways</p>
+              <p className="text-xl md:w-1/2 ">Crafting Dream Getaways</p>
             </div>
 
             <hr />
@@ -151,8 +151,16 @@ export default function IndexPage() {
              
               </div>
             </div>
+              <div className="flex flex-col md:w-1/2 gap-6 mt-28 md:gap-8">
+              <h2 className="md:text-6xl text-4xl">Why Choose Us?</h2>
+
+            </div>
+            <hr className=" border-black" />
+          
           </div>
+
         </div>
+
       </div>
     </DefaultLayout>
   );
