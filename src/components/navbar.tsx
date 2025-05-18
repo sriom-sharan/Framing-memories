@@ -13,7 +13,6 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 
-import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
   return (
