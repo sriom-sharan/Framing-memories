@@ -14,7 +14,7 @@ export default function DefaultLayout({
       <main className="container mx-auto max-w-full  flex-grow ">
         {children}
       </main>
-      <footer className=" pb-10 text-black  bg-[#ebe9e2] ">
+      <footer className=" pb-10 text-black  bg-secondary ">
         <div className="max-w-7xl  grid row-span-3 md:col-span-3 md:gap-12 gap-16 py-12 md:py-20 px-7 mx-auto ">
           <div className="flex flex-col  md:col-start-1 gap-6 md:gap-8">
             <h2 className="md:text-4xl text-3xl mb-6">Framing Memories</h2>

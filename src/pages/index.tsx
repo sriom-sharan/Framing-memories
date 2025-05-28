@@ -6,15 +6,16 @@
 // import { siteConfig } from "@/config/site";
 // import { title, subtitle } from "@/components/primitives";
 // import { GithubIcon } from "@/components/icons";
+import Testimonials from "@/components/testimonials";
 import DefaultLayout from "@/layouts/default";
 import { Button } from "@heroui/button";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <div className="bg-primary-foreground">
+      <div className="bg-accent">
         {/*--------- Hero Section ---------*/}
-        <div className="grid lg:grid-cols-2 bg-[#ebe9e2]">
+        <div className="grid lg:grid-cols-2 ">
           <img src="https://travel-tour-nu.vercel.app/assets/hero-Ci6QhsG0.avif" />
           <div className="flex md:items-center font-spartan flex-col lg:gap-8 gap-4 px-7 py-10 lg:mt-0 justify-center  my-auto min-h-1/2  lg:h-full flex-1 p-4 lg:py-6 lg:p-10 ">
             <h1 className="lg:text-7xl xl:text-8xl md:text-6xl text-5xl text-start lg:text-center">
@@ -33,39 +34,41 @@ export default function IndexPage() {
         </div>
 
         {/*------ My Team Sectioon  --------*/}
-        <div className="max-w-7xl min-h-dvh flex flex-col gap-20 py-12 md:py-20 px-7 mx-auto ">
-          <div className="flex flex-col justify-between gap-4">
-            <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
-              <h2 className="md:text-6xl text-4xl">Meet Our Team</h2>
-              <p className="text-2xl ">
-                E. Reyes Travel Agency is dedicated to crafting personalized and
-                immersive travel experiences for our clients. With a team of
-                passionate travel experts, we aim to ensure unforgettable
-                adventures and cultural exploration, helping our clients create
-                lasting memories.
+        <div className=" min-h-dvh bg-white ">
+          <div className="max-w-7xl min-h-dvh  flex flex-col gap-20 py-12 md:py-20 px-7 mx-auto ">
+            <div className="flex flex-col justify-between gap-4">
+              <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
+                <h2 className="md:text-6xl text-4xl">Meet Our Team</h2>
+                <p className="text-2xl ">
+                  E. Reyes Travel Agency is dedicated to crafting personalized
+                  and immersive travel experiences for our clients. With a team
+                  of passionate travel experts, we aim to ensure unforgettable
+                  adventures and cultural exploration, helping our clients
+                  create lasting memories.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-start">
+              <div className="flex-1 w-full flex md:block justify-center">
+                <img
+                  className="md:w-60 w-full"
+                  src="https://static.wixstatic.com/media/11062b_d5b2846e2bec45c18f4076d5bdd27cf8~mv2.jpg/v1/fill/w_325,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Walking%20Tourists.jpg"
+                />
+              </div>
+
+              <p className="flex-1 font-sans text-xl lg:text-[16px] leading-tight tracking-wide">
+                Our commitment to excellence and client satisfaction drives our
+                mission to deliver unique and off-the-beaten-path travel
+                experiences that resonate with your travel aspirations. Partner
+                with us to experience unmatched local expertise and attention to
+                detail.
               </p>
             </div>
-          </div>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-2 items-start">
-            <div className="flex-1 w-full flex md:block justify-center">
-              <img
-                className="md:w-60 w-full"
-                src="https://static.wixstatic.com/media/11062b_d5b2846e2bec45c18f4076d5bdd27cf8~mv2.jpg/v1/fill/w_325,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Walking%20Tourists.jpg"
-              />
-            </div>
-
-            <p className="flex-1 font-sans text-xl lg:text-[16px] leading-tight tracking-wide">
-              Our commitment to excellence and client satisfaction drives our
-              mission to deliver unique and off-the-beaten-path travel
-              experiences that resonate with your travel aspirations. Partner
-              with us to experience unmatched local expertise and attention to
-              detail.
-            </p>
           </div>
         </div>
 
         {/*----------- Services ----------*/}
-        <div className=" min-h-dvh text-white pb-20 bg-[#445D4A] ">
+        <div className=" min-h-dvh text-white pb-20 bg-primary ">
           <div className="max-w-7xl min-h-dvh  flex flex-col gap-16 py-12 md:py-20 px-7 mx-auto ">
             <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
               <h2 className="md:text-6xl text-4xl">Travel Experiences</h2>
@@ -113,7 +116,7 @@ export default function IndexPage() {
         </div>
 
         {/*----------- Why choose us & Insights ----------*/}
-        <div className=" min-h-dvh text-black pb-16 bg-[#ebe9e2] ">
+        <div className=" min-h-dvh text-black pb-16  ">
           <div className="max-w-7xl min-h-dvh  flex flex-col gap-12 py-12 md:py-20 px-7 mx-auto ">
             <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
               <h2 className="md:text-6xl text-4xl">Travel Insights</h2>
@@ -276,48 +279,48 @@ export default function IndexPage() {
         </div>
 
         {/*--------------- Clients ------------- */}
-        <div className="max-w-7xl  flex flex-col gap-20 py-12 md:py-20 px-7 mx-auto ">
-          <div className="flex flex-col justify-between gap-4">
-            <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
-              <h2 className="md:text-6xl text-4xl">Clients</h2>
-              <p className="text-xl ">Our Explorers </p>
-              <p className="text-2xl ">
-                E. Reyes has served a diverse range of clients, from solo
-                travelers to travel enthusiasts, with dedication and expertise.
-              </p>
+        <div className=" min-h-dvh bg-white pb-16  ">
+          <div className="max-w-7xl  flex flex-col gap-20 py-12 md:py-20 px-7 mx-auto ">
+            <div className="flex flex-col justify-between gap-4">
+              <div className="flex flex-col md:w-1/2 gap-6 md:gap-8">
+                <h2 className="md:text-6xl text-4xl">Clients</h2>
+                <p className="text-xl ">Our Explorers </p>
+                <p className="text-2xl ">
+                  E. Reyes has served a diverse range of clients, from solo
+                  travelers to travel enthusiasts, with dedication and
+                  expertise.
+                </p>
+              </div>
             </div>
-          </div>
-           
-          <div className="flex ">
-            <div className="lg:w-1/2 md:w-1/3"></div>
-           <div className="flex flex-wrap justify-between md:w-2/3 lg:w-1/2 md:justify-end gap-8 ">
-              
-          
-            <h1 className="md:text-4xl text-2xl w-1/4  pb-9  pt-4">
-              Company
-            </h1>
-            <h1 className="md:text-4xl text-2xl w-1/4  pb-9  row-start-1 pt-4">
-              Company
-            </h1>
-            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
-              Company
-            </h1>
-            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
-              Company
-            </h1>
-            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
-              Company
-            </h1>
-            <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
-              Company
-            </h1>
 
-        </div>
+            <div className="flex ">
+              <div className="lg:w-1/2 md:w-1/3"></div>
+              <div className="flex flex-wrap justify-between md:w-2/3 lg:w-1/2 md:justify-end gap-8 ">
+                <h1 className="md:text-4xl text-2xl w-1/4  pb-9  pt-4">
+                  Company
+                </h1>
+                <h1 className="md:text-4xl text-2xl w-1/4  pb-9  row-start-1 pt-4">
+                  Company
+                </h1>
+                <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+                  Company
+                </h1>
+                <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+                  Company
+                </h1>
+                <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+                  Company
+                </h1>
+                <h1 className="md:text-4xl text-2xl w-1/4  pb-9 pt-4">
+                  Company
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
 
         {/*------------ Testimonials -------------*/}
-        <div className="  text-black pb-16 bg-[#ebe9e2] ">
+        {/* <div className="  text-black pb-16  ">
           <div className="max-w-7xl  flex flex-col gap-12 py-12 md:py-20 px-7 mx-auto ">
             <div className="flex flex-col md:w-1/2 gap-6 mb-16 md:gap-8">
               <h2 className="md:text-6xl text-4xl">Testimonials</h2>
@@ -367,10 +370,10 @@ export default function IndexPage() {
 
             <hr className=" border-black" />
           </div>
-        </div>
-
+        </div> */}
+<Testimonials/>
         {/*-------------- Contact US ---------------*/}
-        <div className=" text-white bg-[#445D4A] ">
+        <div className=" text-white bg-primary ">
           <div className="max-w-7xl  flex flex-col gap-12 py-12 md:py-20 px-7 mx-auto ">
             <div className="flex flex-col md:w-1/2 gap-6  md:gap-8">
               <h2 className="md:text-6xl text-4xl">Contact Us</h2>

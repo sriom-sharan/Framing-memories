@@ -10,7 +10,29 @@ export default {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#445D4A", // Dark green for buttons
+        secondary: "#C1C6B9", // Light olive/gray
+        accent: "#ebe9e2", // Cream
+        black: "#000000", // Buttons / text
+        white: "#ffffff", // Text background
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translate(0%)" },
+          "95%": { transform: "translate(-95%)" },
+        },
+        scrollReverse: {
+          "0%": { transform: "translate(-55%)" },
+          "95%": { transform: "translate(55%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 100s infinite",
+        scrollReverse: "scrollReverse 100s infinite",
+      },
+    },
   },
   darkMode: "class",
   plugins: [
