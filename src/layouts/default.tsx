@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/navbar";
 import { Button } from "@heroui/button";
+import { Link } from "react-router-dom";
 
 export default function DefaultLayout({
   children,
@@ -52,12 +53,15 @@ export default function DefaultLayout({
 
           <div className="flex md:flex-row flex-col gap-16  md:col-start-3">
             <div className="flex flex-col col-start-3 md:w-1/3  justify-end  gap-2">
-              <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
-                123-456-7890
-              </p>
-              <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
-                info@mysite.com
-              </p>
+               <a className="hover:text-blue-400 font-sans  text-xl lg:text-[16px] leading-tight tracking-wide" href="https://wa.me/ 91991058381">
+                +91991058381
+              </a>
+              <a
+                className="hover:text-blue-400 font-sans  text-xl lg:text-[16px] leading-tight tracking-wide"
+                href="mailto:framing.memoriess@gmail.com "
+              >
+                framing.memoriess@gmail.com
+              </a>
               <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
                 500 Terry Francine St. San
                 <br />
@@ -65,12 +69,13 @@ export default function DefaultLayout({
               </p>
             </div>
             <div className="flex flex-col col-start-2 w-2/3  justify-end md:ml-8  gap-2">
-              <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
-                123-456-7890
-              </p>
-              <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
-                info@mysite.com
-              </p>
+              <Link to="/privacy-policy" className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
+                Privacy Policy
+              </Link>
+              <Link to="/terms&conditions" className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
+                Terms and Condtions
+              </Link>
+           
               <p className=" font-sans  text-xl lg:text-[16px] leading-tight tracking-wide">
                 500 Terry Francine St. San
                 <br />

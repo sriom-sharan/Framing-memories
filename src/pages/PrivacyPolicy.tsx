@@ -5,8 +5,8 @@ const PrivacyPolicy = () => {
   return (
     <DefaultLayout>
       <div className="bg-accent mx-auto pt-16">
-        <div className="max-w-2xl mx-auto py-10 pb-16 px-7">
-          <h2 className="md:text-7xl font-medium text-5xl md:pt-6 py-2">
+        <div className="max-w-3xl mx-auto py-10 pb-16 px-7">
+          <h2 className="md:text-6xl font-medium text-3xl md:pt-6 py-2">
             Privacy Policy
           </h2>
           <p className=" pb-4">

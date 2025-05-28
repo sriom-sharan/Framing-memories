@@ -22,7 +22,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY + 100 > lastScrollY) {
+      if (window.scrollY  > lastScrollY) {
         // Scrolling down
         setShowNavbar(false);
       } else {
@@ -64,7 +64,7 @@ export const Navbar = () => {
 
       <NavbarContent className="flex flex-row-reverse md:justify-between gap-4">
         <input
-          className="bg- border hidden lg:block outline-none p-2 pl-4 font-normal"
+          className="bg- border hidden rounded-md lg:block outline-none p-2 pl-4 font-normal"
           placeholder="Search Packages..."
           type="search"
         />
@@ -211,7 +211,7 @@ export const Navbar = () => {
               key={`${item}-${index}`}
               className="border-b-2 list-none border-black p-4"
             >
-              <Link color="foreground" href="#" size="lg">
+              <Link  color="foreground" href={item.href} size="lg">
                 {item.label}
               </Link>
             </NavbarMenuItem>
@@ -221,7 +221,7 @@ export const Navbar = () => {
 
       <NavbarContent className="lg:hidden" justify="end">
         <input
-          className="bg- border outline-none p-2 w-32 sm:w-36 md:w-44 font-normal"
+          className="bg- border outline-none rounded-sm p-2 w-32 sm:w-36 md:w-44 font-normal"
           placeholder="Search Packages..."
           type="search"
         />
